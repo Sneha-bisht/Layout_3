@@ -1,5 +1,5 @@
 "use client"
-import { Box, HStack, Icon, VStack,Text, Spacer } from '@chakra-ui/react'
+import { Box, HStack, Icon, VStack,Text, Spacer, Avatar, Badge, Flex } from '@chakra-ui/react'
 import React from 'react'
 import { AiFillDashboard , AiOutlineDollar} from "react-icons/ai";
 import { FaUsers,FaUser ,FaCircleUser} from "react-icons/fa6";
@@ -15,9 +15,9 @@ function Sidebar() {
   return (
   <Box>
 
-  <Text as="h1" ml="38px" fontSize={'45px'} fontWeight={700} mt="50px"> <Icon as={FaMountain} color="#9BBF82" h="36px" w="41px"></Icon>Arrange</Text>
+  <Text as="h1" ml="30px" fontSize={'40px'} fontWeight={700} mt="40px" > <Icon as={FaMountain} color="#9BBF82" h="30px" w="35px" gap='10px'></Icon>Arrange</Text>
     
-    <Box w='247px' bg="#FAFAFB"  minH="576px" border-right='1px solid grey'  mt="110px" ml='31px'>
+    <Box w='247px' bg="#FAFAFB"  minH="576px" border-right='1px solid grey'  mt="25px" ml='31px'>
       
     <VStack spacing={8} align="center" px='5'>
         <Box py='10px'px='12px' bg="#F8FAFB" cursor="pointer">
@@ -57,7 +57,7 @@ function Sidebar() {
       <Spacer/>
       <Box height={59} width={'246px'} bg="#9BBF82"  cursor="pointer" alignContent={'center'} borderRadius={"5px"} >
       <HStack spacing={10}>
-      <Icon as={ AiOutlineDollar}  ml='25'color="#FFFFFF"  alignContent='center'/>
+      <Icon as={ AiOutlineDollar} ml='25'color="#FFFFFF"  alignContent='center'/>
       <Text color="#FFFFFF" ml='10px'>Your Subscription</Text>
         </HStack>
       </Box>
@@ -84,15 +84,24 @@ function Sidebar() {
       </Box>
       <Spacer/>
     </VStack>
+    <Flex>
+    <Box  border="1px solid #F2F2F2" py="10px" px="10px" borderRadius={"10px"} mt='30px' >
+     <Box display={"flex"} gap='10'>
+    <Avatar name='Dan Abrahmov' w="40px" h="40px" src='https://bit.ly/dan-abramov' />
+    <Box>
+    <Text fontWeight='700' fontSize={'12px'} lineHeight={"13.8px"}>
+     Josh Collins
+    </Text>
+    <Text color={"#B9B9B9"} fontWeight="400" lineHeight='13.8px' fontSize={'12px'}>josh@collinsrecruitment.com</Text>
+    </Box>
+    </Box>
+  </Box>
+</Flex>
     
-
-
-
-
-    <Box py='8px'px='12px' bg="#F8FAFB"  cursor="pointer">
+    <Box py='8px'px='12px' bg="#F8FAFB"ml='55px'  mt="30px" cursor="pointer">
       <HStack spacing={10}>
       <Icon as={IoIosLogOut } color="#B9B9B9" />
-      <Text color="#898989">Logout</Text>
+      <Text color="#898989" alignSelf={"center"}>Logout</Text>
         </HStack>
       </Box>
   </Box>

@@ -2,6 +2,7 @@
  import { Box ,Button,Flex,Icon,Text} from '@chakra-ui/react'
  import { BiSolidCrown } from "react-icons/bi";
 import React from 'react'
+import { MdCheck } from 'react-icons/md';
 
 function Proplan() {
   return (
@@ -32,16 +33,17 @@ function Proplan() {
      
     <Box w="313px" h="442px" bg="#F2F2F2"color="#3C3C3C"className='box-text'display={"grid"} p="30px" borderBottomRadius={"10px"}
     >
-      <Text  align={"center"}>Unlimited Interview Arranging</Text>
-      <Text  align={"center"}>Automated SMS Candidate Functionality</Text>
-      <Text  align={"center"}>Live Stage Tracker </Text>
-      <Text  align={"center"}>Templates</Text>
-      <Text  align={"center"}>Candidate and Client Filters</Text>
-      <Text  align={"center"}>Invite Unlimited Team Members</Text>
-      <Text  align={"center"}>Calendar Group Viewing</Text>
-      <Text  align={"center"}>Integrate with Zoom, Google Meet, 
-      Microsoft Teams</Text>
-      <Text align={"center"}>Outlook and Google Calendar Connectivity</Text>
+     <Text ><Icon as={MdCheck} color='#68A77C'></Icon>Unlimited Interview Arranging</Text>
+           <Text ><Icon as={MdCheck} color='#68A77C'></Icon>Automated SMS Candidate Functionality</Text>
+           <Text ><Icon as={MdCheck} color='#68A77C'></Icon>Live Stage Tracker </Text>
+           <Text ><Icon as={MdCheck} color='#68A77C'></Icon>Templates</Text>
+           <Text ><Icon as={MdCheck} color='#68A77C'></Icon>Candidate and Client Filters</Text>
+           <Text ><Icon as={MdCheck} color='#68A77C'></Icon>Invite Unlimited Team Members</Text>
+           <Text ><Icon as={MdCheck} color='#68A77C'></Icon>Calendar Group Viewing</Text>
+           <Text ><Icon as={MdCheck} color='#68A77C'></Icon>Integrate with Zoom, Google Meet,Microsoft Teams</Text>
+           <Text ><Icon as={MdCheck} color='#68A77C'></Icon>Outlook and Google Calendar Connectivity</Text>
+
+      
        <Button  className="button2">Get Started</Button>
     </Box>
    </Box>

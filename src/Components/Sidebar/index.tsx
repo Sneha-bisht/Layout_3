@@ -13,9 +13,9 @@ import { IoIosLogOut } from "react-icons/io";
 
 function Sidebar() {
   return (
-  <Box>
+  <Box >
 
-  <Text as="h1" ml="30px" fontSize={'40px'} fontWeight={700} mt="40px" > <Icon as={FaMountain} color="#9BBF82" h="30px" w="35px" gap='10px'></Icon>Arrange</Text>
+  <Text as="h1" ml="30px" fontSize={'40px'} fontWeight={700} mt="40px" > <Icon as={FaMountain} color="#9BBF82" h="30px" w="35px"mr='7'></Icon>Arrange</Text>
     
     <Box w='247px' bg="#FAFAFB"  minH="576px" border-right='1px solid grey'  mt="25px" ml='31px'>
       
@@ -58,7 +58,7 @@ function Sidebar() {
       <Box height={59} width={'246px'} bg="#9BBF82"  cursor="pointer" alignContent={'center'} borderRadius={"5px"} >
       <HStack spacing={10}>
       <Icon as={ AiOutlineDollar} ml='25'color="#FFFFFF"  alignContent='center'/>
-      <Text color="#FFFFFF" ml='10px'>Your Subscription</Text>
+      <Text color="#FFFFFF" >Your Subscription</Text>
         </HStack>
       </Box>
       <Spacer/>

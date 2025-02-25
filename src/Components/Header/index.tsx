@@ -26,10 +26,8 @@ export default function Header() {
        <Input  ml='45px' mt='9'
        alignItems={'center'}
        type='text'
-       placeholder=" Search..." 
-       
+       placeholder=" Search..."  
        />
-       
       </Box>
       
     <Box ml='40px' display={"Flex"} mr="40px" gap="20px" >
